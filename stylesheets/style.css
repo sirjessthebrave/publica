@@ -604,13 +604,18 @@ Enable when using the pager CSS in typography partial
   position: absolute;
   width: 1px; }
 
-body, h2, .intro-text {
+body, .intro-text {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased; }
 
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased; }
+
 h1 {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'EB Garamond', serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased; }
 
@@ -692,7 +697,7 @@ label {
   margin: 1em 0; }
 
 input[type="email"] {
-  border-color: #74CDCD;
+  border-color: #E8A136;
   line-height: 2;
   height: 2.5em;
   width: 40%; }
@@ -743,6 +748,9 @@ html {
   font-size: 100%;
   line-height: 1.4; }
 
+body {
+  background-color: #FFECCF; }
+
 *:focus {
   outline: dotted 2px #000000; }
 
@@ -757,7 +765,8 @@ a {
 h1 {
   font-size: 62px;
   font-size: 3.875rem;
-  margin: 0; }
+  margin: 0;
+  color: #027C43; }
 
 h2 {
   font-size: 28px;

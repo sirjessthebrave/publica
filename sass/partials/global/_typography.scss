@@ -24,6 +24,7 @@ html {
 
 body {
   @extend %sans-serif;
+  background-color: $c-off-white;
 }
 
 *:focus {
@@ -49,9 +50,10 @@ h1 {
   @extend %bold;
   @include fontsize(62);
   margin: 0;
+  color: $c-green;
 }
 h2 {
-  @extend %sans-serif;
+  @extend %sans-serif-heading;
   @extend %light;
   @include fontsize(28);  
   margin: 0;

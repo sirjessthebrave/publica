@@ -30,8 +30,14 @@
   -webkit-font-smoothing: antialiased;
 }
 
+%sans-serif-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
 %serif {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'EB Garamond', serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
