@@ -1,1 +1,13 @@
 // Global Formalize overrides
+
+label {
+	display: block;
+	margin: 1em 0;
+}
+
+input[type="email"]{
+	border-color: $c-blue;
+	line-height: 2;
+    height: 2.5em;
+    width: 40%;
+} 

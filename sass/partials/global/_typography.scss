@@ -44,6 +44,19 @@ a {
 
 }
 
+h1 {
+  @extend %serif;
+  @extend %bold;
+  @include fontsize(62);
+  margin: 0;
+}
+h2 {
+  @extend %sans-serif;
+  @extend %light;
+  @include fontsize(28);  
+  margin: 0;
+}
+
 //Icons
 
 .icons li {

@@ -2,4 +2,13 @@ section {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  margin-top: 5em;
 }
+
+.intro-text {
+	@extend %sans-serif;
+	@extend %light;
+	margin-top: 8em;
+	line-height: 1.5;
+}
+

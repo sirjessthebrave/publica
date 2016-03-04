@@ -604,13 +604,21 @@ Enable when using the pager CSS in typography partial
   position: absolute;
   width: 1px; }
 
-body {
-  font-family: 'Arial', sans-serif;
+body, h2, .intro-text {
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased; }
 
-.skip-link:focus {
-  font-weight: 900; }
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased; }
+
+.skip-link:focus, h1 {
+  font-weight: 700; }
+
+h2, .intro-text {
+  font-weight: 400; }
 
 .twitter, .facebook, .github, .award, .location, .glass, .mug, .world, .mail, .open-brakets, .close-brakets {
   font-family: 'icon';
@@ -679,6 +687,16 @@ body {
       .tabs li a:hover, .tabs li a:focus {
         background-color: #333; }
 
+label {
+  display: block;
+  margin: 1em 0; }
+
+input[type="email"] {
+  border-color: #74CDCD;
+  line-height: 2;
+  height: 2.5em;
+  width: 40%; }
+
 img {
   max-width: 100%;
   height: auto; }
@@ -736,6 +754,16 @@ a {
   a:focus {
     outline: dotted 2px #000000; }
 
+h1 {
+  font-size: 62px;
+  font-size: 3.875rem;
+  margin: 0; }
+
+h2 {
+  font-size: 28px;
+  font-size: 1.75rem;
+  margin: 0; }
+
 .icons li {
   display: inline;
   list-style: none;
@@ -746,7 +774,12 @@ a {
 section {
   max-width: 900px;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  margin-top: 5em; }
+
+.intro-text {
+  margin-top: 8em;
+  line-height: 1.5; }
 
 /* Welcome to Compass. Use this file to write IE specific override styles.
  * Import this file using the following HTML or equivalent:
