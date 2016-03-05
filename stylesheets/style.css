@@ -806,26 +806,40 @@ h3, h3 a {
 ul.icons {
   padding: 0; }
 
+body {
+  padding: 1em; }
+
 section {
-  max-width: 900px;
+  max-width: 350px;
   margin: 0 auto;
   text-align: center; }
+  @media (min-width: 48em) {
+    section {
+      max-width: 900px; } }
+  .no-mediaqueries section {
+    max-width: 900px; }
 
 .intro-text {
   line-height: 1.5; }
 
 .tag-line {
-  margin-top: 3em;
   text-align: center;
-  margin-top: 3.5em; }
+  margin-top: .5em; }
+  @media (min-width: 48em) {
+    .tag-line {
+      margin-top: 3.5em; } }
+  .no-mediaqueries .tag-line {
+    margin-top: 3.5em; }
+  .tag-line.about {
+    margin-top: 1em; }
 
-/*section.about {
-	padding: 0 2%;
+section.about {
+  /*	padding: 0 2%;
 	width: 70%;
 	float: left;
 	display: inline-block;
-	box-sizing: border-box;
-}*/
+	box-sizing: border-box;*/ }
+
 aside {
   padding: 0 2%;
   width: 30%;

@@ -1,7 +1,14 @@
+body {
+	padding: 1em;
+}
 section {
-  max-width: 900px;
+  max-width: 350px;
   margin: 0 auto;
   text-align: center;
+
+  @include breakpoint($bp-small){
+  	max-width: 900px;
+  }
 }
 
 .intro-text {
@@ -10,18 +17,24 @@ section {
 	line-height: 1.5;
 }
 .tag-line {
-  margin-top: 3em;
   text-align: center;
-  margin-top: 3.5em;
+  margin-top: .5em;
+  @include breakpoint($bp-small){
+  	margin-top: 3.5em;
+  }
+
+  &.about {
+  	margin-top: 1em;
+  }
 }
 
-/*section.about {
-	padding: 0 2%;
+section.about {
+/*	padding: 0 2%;
 	width: 70%;
 	float: left;
 	display: inline-block;
-	box-sizing: border-box;
-}*/
+	box-sizing: border-box;*/
+}
 aside {
 	padding: 0 2%;
 	width: 30%;
