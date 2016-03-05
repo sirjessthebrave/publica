@@ -2,13 +2,32 @@ section {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
-  margin-top: 5em;
 }
 
 .intro-text {
 	@extend %sans-serif;
 	@extend %light;
-	margin-top: 8em;
 	line-height: 1.5;
+}
+.tag-line {
+  margin-top: 3em;
+  text-align: center;
+  margin-top: 3.5em;
+}
+
+/*section.about {
+	padding: 0 2%;
+	width: 70%;
+	float: left;
+	display: inline-block;
+	box-sizing: border-box;
+}*/
+aside {
+	padding: 0 2%;
+	width: 30%;
+	float: left;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: $c-gold;
 }
 
