@@ -766,14 +766,14 @@ p {
   color: #696969; }
 
 h1, h1 a {
-  font-size: 62px;
-  font-size: 3.875rem;
+  font-size: 100px;
+  font-size: 6.25rem;
   margin: 0;
   color: #027C43; }
 
 h2 {
-  font-size: 28px;
-  font-size: 1.75rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   margin: 0;
   color: #E8A136; }
 
@@ -794,7 +794,7 @@ h3, h3 a {
   text-transform: uppercase; }
 
 .button-wrapper {
-  margin: 2em; }
+  margin: 2em 0; }
 
 .icons li {
   display: inline;
@@ -804,32 +804,42 @@ h3, h3 a {
   color: #E8A136; }
 
 ul.icons {
-  padding: 0; }
+  padding: 0;
+  float: left;
+  width: 60%;
+  text-align: left;
+  margin: 0; }
 
 body {
   padding: 1em; }
 
 section {
   max-width: 350px;
-  margin: 0 auto;
-  text-align: center; }
+  margin: 0 auto; }
   @media (min-width: 48em) {
     section {
-      max-width: 900px; } }
+      max-width: 1042px; } }
   .no-mediaqueries section {
-    max-width: 900px; }
+    max-width: 1042px; }
 
 .intro-text {
-  line-height: 1.5; }
+  line-height: 1.5;
+  float: left;
+  width: 60%;
+  padding-left: 1em;
+  box-sizing: border-box;
+  text-align: left; }
 
 .tag-line {
-  text-align: center;
-  margin-top: .5em; }
-  @media (min-width: 48em) {
-    .tag-line {
-      margin-top: 3.5em; } }
-  .no-mediaqueries .tag-line {
-    margin-top: 3.5em; }
+  float: left;
+  min-height: 500px;
+  border-right: solid 5px green;
+  padding-right: 1em;
+  margin-top: 0;
+  text-align: right;
+  /*  @include breakpoint($bp-small){
+  	margin-top: 3.5em;
+  }*/ }
   .tag-line.about {
     margin-top: 1em; }
 

@@ -52,14 +52,14 @@ p{
 h1, h1 a {
   @extend %serif;
   @extend %bold;
-  @include fontsize(62);
+  @include fontsize(100);
   margin: 0;
   color: $c-green;
 }
 h2 {
   @extend %sans-serif-heading;
   @extend %light;
-  @include fontsize(28);  
+  @include fontsize(20);  
   margin: 0;
   color: $c-dark-orange;
 }
@@ -81,7 +81,7 @@ h3, h3 a {
   text-transform: uppercase;
 }
 .button-wrapper {
-  margin: 2em;
+  margin: 2em 0;
 }
 //Icons
 
@@ -94,6 +94,10 @@ h3, h3 a {
 }
 ul.icons {
   padding: 0;
+  float: left;
+  width: 60%;
+  text-align: left;
+  margin: 0;
 }
 .twitter {
   @extend %twitter;

@@ -4,24 +4,33 @@ body {
 section {
   max-width: 350px;
   margin: 0 auto;
-  text-align: center;
 
   @include breakpoint($bp-small){
-  	max-width: 900px;
+  	max-width: 1042px;
   }
 }
 
 .intro-text {
 	@extend %sans-serif;
 	@extend %light;
-	line-height: 1.5;
+    line-height: 1.5;
+    float: left;
+    width: 60%;
+    padding-left: 1em;
+    box-sizing: border-box;
+    text-align: left;
 }
 .tag-line {
-  text-align: center;
-  margin-top: .5em;
-  @include breakpoint($bp-small){
+    float: left;
+    min-height: 500px;
+    border-right: solid 5px green;
+    padding-right: 1em;
+    margin-top: 0;
+ 	text-align:right;
+
+/*  @include breakpoint($bp-small){
   	margin-top: 3.5em;
-  }
+  }*/
 
   &.about {
   	margin-top: 1em;
